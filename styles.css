@@ -391,6 +391,52 @@ header {
     transform: translateY(-2px);
 }
 
+/* Hero highlights */
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+/* Contact info grid */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details h3,
+.education-info h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-details p,
+.education-info p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -451,6 +497,18 @@ footer {
     .social-btn {
         width: 100%;
         max-width: 300px;
+    }
+
+    .hero-highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
 
     .timeline-content::before {
